@@ -44,3 +44,6 @@
     ga('send', 'pageview');
 </script>
 {% endif %}
+{% if CLOUDFLARE_WEB_ANALYTICS %}
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{CLOUDFLARE_WEB_ANALYTICS}}"}'></script><!-- End Cloudflare Web Analytics -->
+{% endif %}
